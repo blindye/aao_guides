@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scripts>
+    <Script>
+      <group>FBW_A32nx</group>
+      <label>spd_mode</label>
+      <script>(A:AUTOPILOT SPEED SLOT INDEX, Number) 1 == if{ 2 (&gt;H:A320_Neo_CDU_MODE_MANAGED_SPEED) } els{ 1 (&gt;H:A320_Neo_CDU_MODE_SELECTED_SPEED) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx</group>
+      <label>hdg_mode</label>
+      <script>(A:AUTOPILOT HEADING SLOT INDEX, Number) 1 == if{ 2 (&gt;H:A320_Neo_CDU_MODE_MANAGED_HEADING) } els{ 1 (&gt;H:A320_Neo_CDU_MODE_SELECTED_HEADING) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx</group>
+      <label>loc_btn</label>
+      <script>(L:A32NX_AUTOPILOT_LOC_MODE, Number) 0 == if{ 1 (&gt;K:AP_LOC_HOLD) 1 (&gt;L:A32NX_AUTOPILOT_LOC_MODE, Number) } els{ 0 (&gt;K:AP_LOC_HOLD) 0 (&gt;L:A32NX_AUTOPILOT_LOC_MODE, Number)}</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx</group>
+      <label>appr_btn</label>
+      <script>(L:A32NX_AUTOPILOT_APPR_MODE, Number) 1 == if{ 0 (&gt;L:A32NX_AUTOPILOT_APPR_MODE, Number) 0 (&gt;K:AP_LOC_HOLD_OFF)} els{0 (&gt;L:A32NX_AUTOPILOT_LOC_MODE, Number) 1 (&gt;K:AP_LOC_HOLD_OFF) 1 (&gt;L:A32NX_AUTOPILOT_APPR_MODE, Number) 1 (&gt;K:AP_APR_HOLD_ON) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx</group>
+      <label>vs_mode</label>
+      <script>(L:A320_NE0_FCU_STATE, Number) 1 == if{ 0 (&gt;H:A320_Neo_FCU_VS_ZERO, Number) 1 (&gt;H:A320_Neo_FCU_VS_HOLD, Number) 1 (&gt;K:AP_PANEL_ALTITUDE_HOLD, Number) 1 (&gt;K:AP_PANEL_VS_ON, Number) 0 (&gt;L:A320_NE0_FCU_STATE, Number) } els{ 0 (&gt;H:A320_Neo_FCU_VS_HOLD, Number) 1 (&gt;H:A320_Neo_FCU_VS_ZERO, Number) 1 (&gt;K:AP_PANEL_VS_ON) 0 (&gt;L:A320_NEO_FCU_FORCE_SELECTED_ALT, Number) 1 (&gt;L:A320_NE0_FCU_STATE, Number) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx</group>
+      <label>alt_mode</label>
+      <script>(A:AUTOPILOT ALTITUDE SLOT INDEX, Number) 1 == if{ 2 (&gt;H:A320_Neo_CDU_MODE_MANAGED_ALTITUDE) } els{ 1 (&gt;H:A320_Neo_CDU_MODE_SELECTED_ALTITUDE) }</script>
+    </Script>
+  </scripts>
+</ScriptList>
