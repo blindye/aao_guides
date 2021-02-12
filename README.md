@@ -5,12 +5,12 @@ Aircraft mods for MSFS 2020 usually uses custom LVars and HVars for certain func
 #### Software needed 
 
 - Microsoft Flight Simulator 2020 
-- Lorby-SI Axis and Ohs 
+- [Lorby-SI Axis and Oh's](https://axisandohs.weebly.com/) 
 - Your favorite aircraft mod *(WT CJ4, FBW 320neo)* 
 
 #### Guides
 
-WorkingTitle CJ4
+[WorkingTitle CJ4](https://github.com/blindye/aao_guides/blob/main/wt_cj4/wt_cj4_guide.md)
 
 FlyByWire Airbus 320neo (Coming later)
 

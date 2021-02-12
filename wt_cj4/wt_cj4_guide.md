@@ -20,7 +20,7 @@ Bind Autopilot button to TOGGLE AUTOPILOT MASTER
 
 ## Using Template
 
-Download template here.
+Download template [here](https://github.com/blindye/aao_guides/blob/main/wt_cj4/WorkingTitle_CJ4.tmpl).
 
 Launch MSFS 2020 and select CJ4 as aircraft and load up in your favorite airport (select runway so all systems are on).
 
