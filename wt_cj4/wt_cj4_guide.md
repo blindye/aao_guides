@@ -22,21 +22,22 @@ Bind Autopilot button to TOGGLE AUTOPILOT MASTER
 
 Download template [here](https://github.com/blindye/aao_guides/blob/main/wt_cj4/WorkingTitle_CJ4.tmpl).
 
-Launch MSFS 2020 and select CJ4 as aircraft and load up in your favorite airport (select runway so all systems are on).
+- Launch MSFS 2020 and select CJ4 as aircraft and load up in your favorite airport (select runway so all systems are on).
 
-Launch Axis and Oh's, make sure it recognizes the aircraft, Cessna CJ4 Citation Asobo should be visible on top of the window.
+- Launch Axis and Oh's, make sure it recognizes the aircraft, Cessna CJ4 Citation Asobo should be visible on top of the window.
 
-Click green circle next to Tools menu, it should disconnect Axis and Oh's from the sim (Connect to simulator visible)
+- Click green circle next to Tools menu, it should disconnect Axis and Oh's from the sim (Connect to simulator visible)
 
-Go to Scripting -> Read HVARs from Sim, wait until it's done.
+- Go to Scripting -> Read HVARs from Sim, wait until it's done.
 
-Click green circle again to connect to sim.
+- Click green circle again to connect to sim.
 
-Go to Scripting -> Read LVARs from Sim, wait until it's done.
+- Go to Scripting -> Read LVARs from Sim, wait until it's done.
 
-Go to Templates -> Import template and find the WorkingTitle_CJ4.tmpl file you downloaded.
+- Go to Templates -> Import template and find the WorkingTitle_CJ4.tmpl file you downloaded.
 
-Assign correct buttons for variables. **__BUG_SELECT are meant for left rotary knob, WT_CJ4_*_*__PRESSED are for AP buttons.
+- Assign correct buttons for variables. **__BUG_SELECT are meant for left rotary knob, WT_CJ4_*_*__PRESSED are for AP buttons.
+
 
 If buttons are not working in simulator, try to restart Axis and Oh's.
 
