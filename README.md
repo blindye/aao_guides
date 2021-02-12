@@ -1,6 +1,6 @@
 ## AAO Guides for MSFS 2020 
 
-Aircraft mods for MSFS 2020 usually uses custom LVars and HVars for certain functions. These variables cannot be assinged inside sim so 3rd party software must be used. Here you can find guides how to setup Lorby-SI’s Axis and Ohs with few aircraft mods. I have used Honeycomb Bravo in examples but any supported peripheral can be used.  
+Aircraft mods for MSFS 2020 usually uses custom LVars and HVars for certain functions. These variables cannot be assigned inside sim so 3rd party software must be used. Here you can find guides how to setup Lorby-SI’s Axis and Ohs with few aircraft mods. I have used Honeycomb Bravo in examples but any supported peripheral can be used.  
 
 #### Software needed 
 
