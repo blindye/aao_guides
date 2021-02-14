@@ -25,7 +25,7 @@ First we need to unbind and bind some buttons inside the simulator. Check the ti
 
 ## Using Template
 
-- Download template here.
+- Download template [here](https://github.com/blindye/aao_guides/blob/main/fbw_a32nx/FBW_A32nx.tmpl). (Right click -> Save as.)
 - Launch MSFS 2020 and select Airbus A320neo as aircraft and load up in your favorite airport (select runway so all systems are on).
 - Launch Axis and Oh's, make sure it recognizes the aircraft, Airbus A320 Neo Asobo should be visible on top of the window.
 - Click green circle next to Tools menu, it should disconnect Axis and Oh's from the sim (Connect to simulator visible)
@@ -74,6 +74,7 @@ Then in Assigned button/key press correct button in HC Bravo and it should recog
 - NAV button is assigned as LOC capture
 
 - VS button logic is that when pressed first time it will go to LVL OFF mode, second time it will go to VS mode and you can increase/decrease it with right knob (left knob has to be in VS position), and when pressed third time it will disable VS mode.
+- Altitude increment (100 or 1000) can be changed under the ALT knob (ingame).
 
 - MSFS 2020 currently has a bug if some button is assigned inside sim which is pressed on always. Heading and altitude selecting won't work properly when this bug occurs. Heading will go in 10 increments (instead of 1) and altitude in 1000 increments (instead of 100) . In Honeycomb Bravo these are like Gear handle and all on/off switches. To prevent this bug you have to unbind all buttons that are active all time. These buttons will be highlighted as white in Controls settings. Most of these can be assigned through AAO. For example gear handle can be assigned as Key down event: GEAR_UP and GEAR_DOWN.
 

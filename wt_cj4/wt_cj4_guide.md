@@ -10,11 +10,12 @@ First we need to unbind and bind some buttons inside the simulator. Check the ti
 
 I'm using Honeycomb Bravo as an example but if you are using different peripheral try to figure out correct buttons.
 
-First unbind HDG, NAV, APR, REV, ALT, VS, IAS and left rotary knob.
+- First unbind HDG, NAV, APR, REV, ALT, VS, IAS and left rotary knob.
 
-Right rotary knob should be assigned as PLUS for right and MINUS for left.
+- Right rotary knob should be assigned as PLUS for right and MINUS for left.
 
-Bind Autopilot button to TOGGLE AUTOPILOT MASTER
+- Bind Autopilot button to TOGGLE AUTOPILOT MASTER
+
 
 
 
@@ -36,7 +37,7 @@ Download template [here](https://github.com/blindye/aao_guides/blob/main/wt_cj4/
 
 - Go to Templates -> Import template and find the WorkingTitle_CJ4.tmpl file you downloaded.
 
-- Assign correct buttons for variables. **__BUG_SELECT are meant for left rotary knob, WT_CJ4_*_*__PRESSED are for AP buttons.
+- Assign correct buttons for variables.  <code>&ast;</code>_BUG_SELECT are meant for left rotary knob, WT_CJ4_<code>&ast;</code>_PRESSED are for AP buttons.
 
 
 If buttons are not working in simulator, try to restart Axis and Oh's.
@@ -50,8 +51,6 @@ You can assign buttons manually by clicking + sign under Assigned buttons.
 For Key Down Event check the table below for correct button and event. You can write part of the event in input box and click Apply filter, then finding correct event is easier.
 
 Then in Assigned button/key press correct button in HC Bravo and it should recognize it.
-
-##### 
 
 | Button                 | Key down event      |
 | ---------------------- | ------------------- |
@@ -72,7 +71,7 @@ Then in Assigned button/key press correct button in HC Bravo and it should recog
 
 MSFS 2020 currently has a bug if some button is assigned inside sim which is pressed on always. Heading and altitude selecting won't work properly when this bug occurs. Heading will go in 10 increments (instead of 1) and altitude in 1000 increments (instead of 100) . In Honeycomb Bravo these are like Gear handle and all on/off switches. To prevent this bug you have to unbind all buttons that are active all time. These buttons will be highlighted as white in Controls settings. 
 
- Most of these can be assigned through AAO.
+Most of these can be assigned through AAO.
 
 For example gear handle can be assigned as Key down event: GEAR_UP and GEAR_DOWN.
 
