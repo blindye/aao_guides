@@ -69,7 +69,7 @@
     <Script>
       <group>FBW_A32nx</group>
       <label>right_rotary_dec</label>
-      <script>(L:fbw_knob_selector, Number) 1 == if{ (A:AUTOPILOT ALTITUDE LOCK VAR:3, Feet) (L:XMLVAR_Autopilot_Altitude_Increment) &gt;= if{ 3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, Feet) (L:XMLVAR_Autopilot_Altitude_Increment) - (&gt;K:2:AP_ALT_VAR_SET_ENGLISH) } (L:fbw_knob_selector, Number) 3 == if{ 1 (&gt;K:HEADING_BUG_DEC) 1 (&gt;H:A320_Neo_CDU_AP_DEC_HEADING) (L:fbw_knob_selector, Number) 2 == if{ 1 (&gt;K:KEY_MINUS, Keyevent) } (L:fbw_knob_selector, Number) 5 == if{ 1 (&gt;K:KEY_MINUS, Keyevent) }</script>
+      <script>(L:fbw_knob_selector, Number) 1 == if{ (A:AUTOPILOT ALTITUDE LOCK VAR:3, Feet) (L:XMLVAR_Autopilot_Altitude_Increment) &gt;= if{ 3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, Feet) (L:XMLVAR_Autopilot_Altitude_Increment) - (&gt;K:2:AP_ALT_VAR_SET_ENGLISH) } (L:fbw_knob_selector, Number) 3 == if{ 1 (&gt;K:HEADING_BUG_DEC) 1 (&gt;H:A320_Neo_CDU_AP_DEC_HEADING) } (L:fbw_knob_selector, Number) 2 == if{ 1 (&gt;K:KEY_MINUS, Keyevent) } (L:fbw_knob_selector, Number) 5 == if{ 1 (&gt;K:KEY_MINUS, Keyevent) }</script>
     </Script>
   </scripts>
 </ScriptList>
