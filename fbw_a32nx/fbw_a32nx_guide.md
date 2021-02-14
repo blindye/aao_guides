@@ -25,7 +25,7 @@ First we need to unbind and bind some buttons inside the simulator. Check the ti
 
 ## Using Template
 
-- Download template [here](https://github.com/blindye/aao_guides/blob/main/fbw_a32nx/FBW_A32nx.tmpl). (Right click -> Save as.)
+- Download template [here](https://raw.githubusercontent.com/blindye/aao_guides/main/fbw_a32nx/FBW_A32nx.tmpl). (Right click -> Save as.)
 - Launch MSFS 2020 and select Airbus A320neo as aircraft and load up in your favorite airport (select runway so all systems are on).
 - Launch Axis and Oh's, make sure it recognizes the aircraft, Airbus A320 Neo Asobo should be visible on top of the window.
 - Click green circle next to Tools menu, it should disconnect Axis and Oh's from the sim (Connect to simulator visible)

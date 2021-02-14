@@ -21,7 +21,7 @@ I'm using Honeycomb Bravo as an example but if you are using different periphera
 
 ## Using Template
 
-Download template [here](https://github.com/blindye/aao_guides/blob/main/wt_cj4/WorkingTitle_CJ4.tmpl). (Right click -> Save As)
+Download template [here](https://raw.githubusercontent.com/blindye/aao_guides/main/wt_cj4/WorkingTitle_CJ4.tmpl). (Right click -> Save As)
 
 - Launch MSFS 2020 and select CJ4 as aircraft and load up in your favorite airport (select runway so all systems are on).
 
