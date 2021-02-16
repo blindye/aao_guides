@@ -14,6 +14,8 @@ Aircraft mods for MSFS 2020 usually uses custom LVars and HVars for certain func
 
 [FlyByWire Airbus A320neo](https://github.com/blindye/aao_guides/blob/main/fbw_a32nx/fbw_a32nx_guide.md)
 
+[Generic switches](https://github.com/blindye/aao_guides/blob/main/generic/GENERIC.md)
+
 Aerosoft CRJ  (Coming later)
 
 ### Contact me 
