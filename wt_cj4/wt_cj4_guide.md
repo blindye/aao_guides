@@ -20,7 +20,7 @@ I'm using Honeycomb Bravo as an example but if you are using different periphera
 
 ## Setting up the AAO Scripts
 
-Download scripts [here](https://github.com/blindye/aao_guides/blob/main/wt_cj4/wt_cj4_scripts.xml) 
+Download scripts [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/wt_cj4_scripts.xml) 
 
 - Import scripts to AAO from Scripting -> Import Scripts. Find the downloaded .XML file and import it
 
@@ -29,7 +29,7 @@ Download scripts [here](https://github.com/blindye/aao_guides/blob/main/wt_cj4/w
 
 ## Using Template (outdated, do not use)
 
-Download template [here](https://raw.githubusercontent.com/blindye/aao_guides/main/wt_cj4/WorkingTitle_CJ4.tmpl). (Right click -> Save As)
+Will update soon
 
 - Launch MSFS 2020 and select CJ4 as aircraft and load up in your favorite airport (select runway so all systems are on).
 
