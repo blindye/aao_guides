@@ -1,6 +1,8 @@
-## AAO Guide for WorkingTitle CJ4
+## AAO Guide for Working Title CJ4
 
-I have AAO template available for Honeycomb Bravo. You can also assign buttons manually.
+Here you can find AAO template for Honeycomb Bravo. You can also assign buttons manually. Make sure you have [Working Title CJ4](https://github.com/Working-Title-MSFS-Mods/fspackages) installed.
+
+*Please note LORBY-SI - Axis and Oh's is required. It's available in [Simmarket](https://secure.simmarket.com/lorby-si-axis-and-ohs-fsx-p3d-msfs.phtml)*
 
 
 

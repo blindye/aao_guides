@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scripts>
+    <Script>
+      <group>GA</group>
+      <label>master_battery_on</label>
+      <script>1 (&gt;K:MASTER_BATTERY_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>master_battery_off</label>
+      <script>0 (&gt;K:MASTER_BATTERY_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>master_alt_on</label>
+      <script>1 (&gt;K:ALTERNATOR_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>master_alt_off</label>
+      <script>0 (&gt;K:ALTERNATOR_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>avionics_bus1_on</label>
+      <script>1 (&gt;K:AVIONICS_MASTER_1_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>avionics_bus1_off</label>
+      <script>0 (&gt;K:AVIONICS_MASTER_1_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>avionics_bus2_on</label>
+      <script>1 (&gt;K:AVIONICS_MASTER_2_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>avionics_bus2_off</label>
+      <script>0 (&gt;K:AVIONICS_MASTER_2_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>beacon_lights_on</label>
+      <script>1 (&gt;K:BEACON_LIGHTS_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>beacon_lights_off</label>
+      <script>0 (&gt;K:BEACON_LIGHTS_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>landing_lights_off</label>
+      <script>0 (&gt;K:LANDING_LIGHTS_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>landing_lights_on</label>
+      <script>1 (&gt;K:LANDING_LIGHTS_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>taxi_lights_on</label>
+      <script>1 (&gt;K:TAXI_LIGHTS_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>taxi_lights_off</label>
+      <script>0 (&gt;K:TAXI_LIGHTS_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>nav_lights_off</label>
+      <script>0 (&gt;K:NAV_LIGHTS_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>nav_lights_on</label>
+      <script>1 (&gt;K:NAV_LIGHTS_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>strobe_lights_on</label>
+      <script>1 (&gt;K:STROBES_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>strobe_lights_off</label>
+      <script>0 (&gt;K:STROBES_SET)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>magneto_off</label>
+      <script>1 (&gt;K:MAGNETO_OFF)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>magneto_left</label>
+      <script>1 (&gt;K:MAGNETO_LEFT)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>magneto_right</label>
+      <script>1 (&gt;K:MAGNETO_RIGHT)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>magneto_both</label>
+      <script>1 (&gt;K:MAGNETO_BOTH)</script>
+    </Script>
+    <Script>
+      <group>GA</group>
+      <label>magneto_start</label>
+      <script>1 (&gt;K:MAGNETO_START)</script>
+    </Script>
+  </scripts>
+</ScriptList>

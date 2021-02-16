@@ -4,6 +4,8 @@ Here you can find how to set up AAO with [FlyByWire's A320neo](https://flybywire
 
 Instructions are for Honeycomb Bravo only. If you want to use some other peripheral you probably need to edit the scripts.
 
+*Please note LORBY-SI - Axis and Oh's is required. It's available in [Simmarket](https://secure.simmarket.com/lorby-si-axis-and-ohs-fsx-p3d-msfs.phtml)*
+
 
 
 ## Setting up the sim
