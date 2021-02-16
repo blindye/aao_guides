@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scripts>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>left_rotary_ias</label>
+      <script>5 (&gt;L:wt_knob_selector, Number) 1 (&gt;K:AIRSPEED_BUG_SELECT)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>left_rotary_vs</label>
+      <script>2 (&gt;L:wt_knob_selector, Number) 1 (&gt;K:VSI_BUG_SELECT)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>left_rotary_alt</label>
+      <script>1 (&gt;L:wt_knob_selector, Number) 1 (&gt;K:ALTITUDE_BUG_SELECT)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>left_rotary_crs</label>
+      <script>4 (&gt;L:wt_knob_selector, Number)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>left_rotary_hdg</label>
+      <script>3 (&gt;L:wt_knob_selector, Number) 1 (&gt;K:HEADING_BUG_SELECT)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>right_rotary_dec</label>
+      <script>(L:wt_knob_selector, Number) 1 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 2 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 3 == if{ 1 (&gt;K:HEADING_BUG_DEC) } (L:wt_knob_selector, Number) 4 == if{ 1 (L:WT_CJ4_LNAV_MODE, Number) 2 == if{ (&gt;K:VOR2_OBI_DEC) } els{ (&gt;K:VOR1_OBI_DEC) } (L:wt_knob_selector, Number) 5 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) }</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>right_rotary_inc</label>
+      <script>(L:wt_knob_selector, Number) 1 == if{ 1 (&gt;K:KEY_PLUS, KeyEvent) } (L:wt_knob_selector, Number) 2 == if{ 1 (&gt;K:KEY_PLUS, KeyEvent) } (L:wt_knob_selector, Number) 3 == if{ 1 (&gt;K:HEADING_BUG_INC) } (L:wt_knob_selector, Number) 5 == if{ 1 (&gt;K:KEY_PLUS, KeyEvent) }</script>
+    </Script>
+  </scripts>
+</ScriptList>

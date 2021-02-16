@@ -12,16 +12,22 @@ First we need to unbind and bind some buttons inside the simulator. Check the ti
 
 I'm using Honeycomb Bravo as an example but if you are using different peripheral try to figure out correct buttons.
 
-- First unbind HDG, NAV, APR, REV, ALT, VS, IAS and left rotary knob.
-
-- Right rotary knob should be assigned as PLUS for right and MINUS for left.
+- First unbind HDG, NAV, APR, REV, ALT, VS, IAS, left and right rotary knob.
 
 - Bind Autopilot button to TOGGLE AUTOPILOT MASTER
 
 
 
+## Setting up the AAO Scripts
 
-## Using Template
+Download scripts [here](https://github.com/blindye/aao_guides/blob/main/wt_cj4/wt_cj4_scripts.xml) 
+
+- Import scripts to AAO from Scripting -> Import Scripts. Find the downloaded .XML file and import it
+
+
+
+
+## Using Template (outdated, do not use)
 
 Download template [here](https://raw.githubusercontent.com/blindye/aao_guides/main/wt_cj4/WorkingTitle_CJ4.tmpl). (Right click -> Save As)
 
@@ -41,31 +47,7 @@ Download template [here](https://raw.githubusercontent.com/blindye/aao_guides/ma
 
 - Assign correct buttons for variables.  <code>&ast;</code>_BUG_SELECT are meant for left rotary knob, WT_CJ4_<code>&ast;</code>_PRESSED are for AP buttons.
 
-
 If buttons are not working in simulator, try to restart Axis and Oh's.
-
-
-
-## Assigning buttons manually
-
-You can assign buttons manually by clicking + sign under Assigned buttons. 
-
-For Key Down Event check the table below for correct button and event. You can write part of the event in input box and click Apply filter, then finding correct event is easier.
-
-Then in Assigned button/key press correct button in HC Bravo and it should recognize it.
-
-| Button                 | Key down event      |
-| ---------------------- | ------------------- |
-| ALT (left rotary knob) | ALTITUDE_BUG_SELECT |
-| VS (left rotary knob)  | VSI_BUG_SELECT      |
-| HDG (left rotary knob) | HEADING_BUG_SELECT  |
-| IAS (left rotary knob) | AIRSPEED_BUG_SELECT |
-| HDG (AP Panel)         | WT_CJ4_HDG_PRESSED  |
-| NAV (AP Panel)         | WT_CJ4_NAV_PRESSED  |
-| REV (AP Panel)         | WT_CJ4_VNAV_PRESSED |
-| ALT (AP Panel)         | AP_ALT_HOLD         |
-| VS (AP Panel)          | WT_CJ4_VS_PRESSED   |
-| IAS (AP Panel)         | WT_CJ4_FLC_PRESSED  |
 
 
 
@@ -81,5 +63,5 @@ For example gear handle can be assigned as Key down event: GEAR_UP and GEAR_DOWN
 
 ## Known issues
 
-- In LNAV mode when turning heading knob plane will turn little bit but should come back to correct track
+- Clicking sounds doesn't play
 
