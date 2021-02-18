@@ -29,7 +29,7 @@
     <Script>
       <group>WT_CJ4</group>
       <label>right_rotary_dec</label>
-      <script>(L:wt_knob_selector, Number) 1 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 2 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 3 == if{ 1 (&gt;K:HEADING_BUG_DEC) } (L:wt_knob_selector, Number) 4 == if{ 1 (L:WT_CJ4_LNAV_MODE, Number) 2 == if{ (&gt;K:VOR2_OBI_DEC) } els{ (&gt;K:VOR1_OBI_DEC) } (L:wt_knob_selector, Number) 5 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) }</script>
+      <script>(L:wt_knob_selector, Number) 1 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 2 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 3 == if{ 1 (&gt;K:HEADING_BUG_DEC) } (L:wt_knob_selector, Number) 5 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) }</script>
     </Script>
     <Script>
       <group>WT_CJ4</group>
