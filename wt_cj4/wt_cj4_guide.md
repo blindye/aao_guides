@@ -18,18 +18,11 @@ I'm using Honeycomb Bravo as an example but if you are using different periphera
 
 
 
-## Setting up the AAO Scripts
+## Setting up the AAO
 
 Download scripts [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/wt_cj4_scripts.xml) (Right Click -> Save file as.)
 
 - Import scripts to AAO from Scripting -> Import Scripts. Find the downloaded .XML file and import it
-
-
-
-
-## Using Template
-
-Download template [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/WorkingTitle_CJ4.tmpl) (Right Click -> Save file as.)
 
 - Launch MSFS 2020 and select CJ4 as aircraft and load up in your favorite airport (select runway so all systems are on).
 
@@ -43,15 +36,10 @@ Download template [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/W
 
 - Go to Scripting -> Read LVARs from Sim, wait until it's done.
 
-- Go to Templates -> Import template and find the WorkingTitle_CJ4.tmpl file you downloaded.
-
-- Assign buttons and rotary knobs for correct scripts (check correct variables for AP buttons below)
-
-If buttons are not working in simulator, try to restart Axis and Oh's.
 
 
 
-## Setting assignments manually
+## Setting assignments
 
 | Left rotary knob | Script                 |
 | ---------------- | ---------------------- |
@@ -75,6 +63,16 @@ If buttons are not working in simulator, try to restart Axis and Oh's.
 | ALT       | AP_ALT_HOLD            |
 | VS        | WT_CJ4_AP_VS_PRESSED   |
 | IAS       | WT_CJ4_AP_FLC_PRESSED  |
+
+
+
+## Video guide
+
+<div align="left">
+      <a href="https://www.youtube.com/watch?v=787Uf6bmZ5Q">
+         <img src="https://img.youtube.com/vi/787Uf6bmZ5Q/0.jpg" style="width:100%;">
+      </a>
+</div>
 
 
 
