@@ -20,20 +20,20 @@ I'm using Honeycomb Bravo as an example but if you are using different periphera
 
 ## Setting up the AAO Scripts
 
-Download scripts [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/wt_cj4_scripts.xml) 
+Download scripts [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/wt_cj4_scripts.xml) (Right Click -> Save file as.)
 
 - Import scripts to AAO from Scripting -> Import Scripts. Find the downloaded .XML file and import it
 
 
 
 
-## Using Template (outdated, do not use)
+## Using Template
 
-Will update soon
+Download template [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/WorkingTitle_CJ4.tmpl) (Right Click -> Save file as.)
 
 - Launch MSFS 2020 and select CJ4 as aircraft and load up in your favorite airport (select runway so all systems are on).
 
-- Launch Axis and Oh's, make sure it recognizes the aircraft, Cessna CJ4 Citation Asobo should be visible on top of the window.
+- Launch Axis and Oh's, make sure it recognizes the aircraft, CJ4 should be visible on top of the window.
 
 - Click green circle next to Tools menu, it should disconnect Axis and Oh's from the sim (Connect to simulator visible)
 
@@ -45,9 +45,36 @@ Will update soon
 
 - Go to Templates -> Import template and find the WorkingTitle_CJ4.tmpl file you downloaded.
 
-- Assign correct buttons for variables.  <code>&ast;</code>_BUG_SELECT are meant for left rotary knob, WT_CJ4_<code>&ast;</code>_PRESSED are for AP buttons.
+- Assign buttons and rotary knobs for correct scripts (check correct variables for AP buttons below)
 
 If buttons are not working in simulator, try to restart Axis and Oh's.
+
+
+
+## Setting assignments manually
+
+| Left rotary knob | Script                 |
+| ---------------- | ---------------------- |
+| ALT              | WT_CJ4-left_rotary_alt |
+| VS               | WT_CJ4-left_rotary_vs  |
+| HDG              | WT_CJ4-left_rotary_hdg |
+| CRS              | WT_CJ4-left_rotary_crs |
+| IAS              | WT_CJ4-left_rotary_ias |
+
+| Right rotary knob     | Script                  |
+| --------------------- | ----------------------- |
+| Turn left (decrease)  | WT_CJ4-right_rotary_dec |
+| Turn right (increase) | WT_CJ4-right_rotary_dec |
+
+| AP button | Variable               |
+| --------- | ---------------------- |
+| HDG       | WT_CJ4_AP_HDG_PRESSED  |
+| NAV       | WT_CJ4_AP_NAV_PRESSED  |
+| APR       | WT_CJ4_AP_APPR_PRESSED |
+| REV       | WT_CJ4_AP_VNAV_PRESSED |
+| ALT       | AP_ALT_HOLD            |
+| VS        | WT_CJ4_AP_VS_PRESSED   |
+| IAS       | WT_CJ4_AP_FLC_PRESSED  |
 
 
 

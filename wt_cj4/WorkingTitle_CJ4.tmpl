@@ -8,87 +8,19 @@
     </TemplateDevice>
   </JoysticksUsed>
   <template>
-    <aircraftId>WorkingTitle_CJ4</aircraftId>
-    <airFileId>WorkingTitle_CJ4</airFileId>
+    <aircraftId>WT_CJ4</aircraftId>
+    <airFileId>WT_CJ4</airFileId>
     <buttons>
       <GlobalHotkey>
         <downEvent>
-          <Group>Autopilot</Group>
-          <Description>Selects the heading bug for use with +/-</Description>
-          <SimulatorEventName>HEADING_BUG_SELECT</SimulatorEventName>
+          <Group>WT_CJ4</Group>
+          <Description>RPN</Description>
+          <SimulatorEventName>WT_CJ4-left_rotary_alt</SimulatorEventName>
           <MinValue>0</MinValue>
           <MaxValue>0</MaxValue>
           <ValueToSet>1</ValueToSet>
           <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
-          <type>SINGLE</type>
-        </downEvent>
-        <modifier>0</modifier>
-        <key>0</key>
-        <repeat>16384</repeat>
-        <repeatFrequency>1</repeatFrequency>
-        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
-        <joystickName>Bravo Throttle Quadrant</joystickName>
-        <joystickButton>18</joystickButton>
-        <joystickPovControl>-1</joystickPovControl>
-        <joystickPovDirection>-1</joystickPovDirection>
-        <midiDeviceId>-1</midiDeviceId>
-        <midiChannel>-1</midiChannel>
-        <midiEvent>-1</midiEvent>
-        <endless>false</endless>
-        <midiEncoder>NONE</midiEncoder>
-        <isSimKey>false</isSimKey>
-        <comboSuppressesEvent>false</comboSuppressesEvent>
-        <comboIsToggle>false</comboIsToggle>
-        <fastTurn>false</fastTurn>
-        <timeoutMs>0</timeoutMs>
-        <virtualModifiers />
-        <virtualKeys />
-        <Action>HEADING_BUG_SELECT</Action>
-      </GlobalHotkey>
-      <GlobalHotkey>
-        <downEvent>
-          <Group>Autopilot</Group>
-          <Description>Selects the vertical speed reference for use with +/-</Description>
-          <SimulatorEventName>VSI_BUG_SELECT</SimulatorEventName>
-          <MinValue>0</MinValue>
-          <MaxValue>0</MaxValue>
-          <ValueToSet>1</ValueToSet>
-          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
-          <type>SINGLE</type>
-        </downEvent>
-        <modifier>0</modifier>
-        <key>0</key>
-        <repeat>16384</repeat>
-        <repeatFrequency>1</repeatFrequency>
-        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
-        <joystickName>Bravo Throttle Quadrant</joystickName>
-        <joystickButton>19</joystickButton>
-        <joystickPovControl>-1</joystickPovControl>
-        <joystickPovDirection>-1</joystickPovDirection>
-        <midiDeviceId>-1</midiDeviceId>
-        <midiChannel>-1</midiChannel>
-        <midiEvent>-1</midiEvent>
-        <endless>false</endless>
-        <midiEncoder>NONE</midiEncoder>
-        <isSimKey>false</isSimKey>
-        <comboSuppressesEvent>false</comboSuppressesEvent>
-        <comboIsToggle>false</comboIsToggle>
-        <fastTurn>false</fastTurn>
-        <timeoutMs>0</timeoutMs>
-        <virtualModifiers />
-        <virtualKeys />
-        <Action>VSI_BUG_SELECT</Action>
-      </GlobalHotkey>
-      <GlobalHotkey>
-        <downEvent>
-          <Group>Autopilot</Group>
-          <Description>Selects the altitude reference for use with +/-</Description>
-          <SimulatorEventName>ALTITUDE_BUG_SELECT</SimulatorEventName>
-          <MinValue>0</MinValue>
-          <MaxValue>0</MaxValue>
-          <ValueToSet>1</ValueToSet>
-          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
-          <type>SINGLE</type>
+          <type>SCRIPT</type>
         </downEvent>
         <modifier>0</modifier>
         <key>0</key>
@@ -111,18 +43,86 @@
         <timeoutMs>0</timeoutMs>
         <virtualModifiers />
         <virtualKeys />
-        <Action>ALTITUDE_BUG_SELECT</Action>
+        <Action>WT_CJ4-left_rotary_alt</Action>
       </GlobalHotkey>
       <GlobalHotkey>
         <downEvent>
-          <Group>Autopilot</Group>
-          <Description>Selects the airspeed reference for use with +/-</Description>
-          <SimulatorEventName>AIRSPEED_BUG_SELECT</SimulatorEventName>
+          <Group>WT_CJ4</Group>
+          <Description>RPN</Description>
+          <SimulatorEventName>WT_CJ4-left_rotary_crs</SimulatorEventName>
           <MinValue>0</MinValue>
           <MaxValue>0</MaxValue>
           <ValueToSet>1</ValueToSet>
           <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
-          <type>SINGLE</type>
+          <type>SCRIPT</type>
+        </downEvent>
+        <modifier>0</modifier>
+        <key>0</key>
+        <repeat>16384</repeat>
+        <repeatFrequency>1</repeatFrequency>
+        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
+        <joystickName>Bravo Throttle Quadrant</joystickName>
+        <joystickButton>17</joystickButton>
+        <joystickPovControl>-1</joystickPovControl>
+        <joystickPovDirection>-1</joystickPovDirection>
+        <midiDeviceId>-1</midiDeviceId>
+        <midiChannel>-1</midiChannel>
+        <midiEvent>-1</midiEvent>
+        <endless>false</endless>
+        <midiEncoder>NONE</midiEncoder>
+        <isSimKey>false</isSimKey>
+        <comboSuppressesEvent>false</comboSuppressesEvent>
+        <comboIsToggle>false</comboIsToggle>
+        <fastTurn>false</fastTurn>
+        <timeoutMs>0</timeoutMs>
+        <virtualModifiers />
+        <virtualKeys />
+        <Action>WT_CJ4-left_rotary_crs</Action>
+      </GlobalHotkey>
+      <GlobalHotkey>
+        <downEvent>
+          <Group>WT_CJ4</Group>
+          <Description>RPN</Description>
+          <SimulatorEventName>WT_CJ4-left_rotary_hdg</SimulatorEventName>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+          <ValueToSet>1</ValueToSet>
+          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
+          <type>SCRIPT</type>
+        </downEvent>
+        <modifier>0</modifier>
+        <key>0</key>
+        <repeat>16384</repeat>
+        <repeatFrequency>1</repeatFrequency>
+        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
+        <joystickName>Bravo Throttle Quadrant</joystickName>
+        <joystickButton>18</joystickButton>
+        <joystickPovControl>-1</joystickPovControl>
+        <joystickPovDirection>-1</joystickPovDirection>
+        <midiDeviceId>-1</midiDeviceId>
+        <midiChannel>-1</midiChannel>
+        <midiEvent>-1</midiEvent>
+        <endless>false</endless>
+        <midiEncoder>NONE</midiEncoder>
+        <isSimKey>false</isSimKey>
+        <comboSuppressesEvent>false</comboSuppressesEvent>
+        <comboIsToggle>false</comboIsToggle>
+        <fastTurn>false</fastTurn>
+        <timeoutMs>0</timeoutMs>
+        <virtualModifiers />
+        <virtualKeys />
+        <Action>WT_CJ4-left_rotary_hdg</Action>
+      </GlobalHotkey>
+      <GlobalHotkey>
+        <downEvent>
+          <Group>WT_CJ4</Group>
+          <Description>RPN</Description>
+          <SimulatorEventName>WT_CJ4-left_rotary_ias</SimulatorEventName>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+          <ValueToSet>1</ValueToSet>
+          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
+          <type>SCRIPT</type>
         </downEvent>
         <modifier>0</modifier>
         <key>0</key>
@@ -145,7 +145,142 @@
         <timeoutMs>0</timeoutMs>
         <virtualModifiers />
         <virtualKeys />
-        <Action>AIRSPEED_BUG_SELECT</Action>
+        <Action>WT_CJ4-left_rotary_ias</Action>
+      </GlobalHotkey>
+      <GlobalHotkey>
+        <downEvent>
+          <Group>WT_CJ4</Group>
+          <Description>RPN</Description>
+          <SimulatorEventName>WT_CJ4-left_rotary_vs</SimulatorEventName>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+          <ValueToSet>1</ValueToSet>
+          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
+          <type>SCRIPT</type>
+        </downEvent>
+        <modifier>0</modifier>
+        <key>0</key>
+        <repeat>16384</repeat>
+        <repeatFrequency>1</repeatFrequency>
+        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
+        <joystickName>Bravo Throttle Quadrant</joystickName>
+        <joystickButton>19</joystickButton>
+        <joystickPovControl>-1</joystickPovControl>
+        <joystickPovDirection>-1</joystickPovDirection>
+        <midiDeviceId>-1</midiDeviceId>
+        <midiChannel>-1</midiChannel>
+        <midiEvent>-1</midiEvent>
+        <endless>false</endless>
+        <midiEncoder>NONE</midiEncoder>
+        <isSimKey>false</isSimKey>
+        <comboSuppressesEvent>false</comboSuppressesEvent>
+        <comboIsToggle>false</comboIsToggle>
+        <fastTurn>false</fastTurn>
+        <timeoutMs>0</timeoutMs>
+        <virtualModifiers />
+        <virtualKeys />
+        <Action>WT_CJ4-left_rotary_vs</Action>
+      </GlobalHotkey>
+      <GlobalHotkey>
+        <downEvent>
+          <Group>WT_CJ4</Group>
+          <Description>RPN</Description>
+          <SimulatorEventName>WT_CJ4-right_rotary_dec</SimulatorEventName>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+          <ValueToSet>1</ValueToSet>
+          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
+          <type>SCRIPT</type>
+        </downEvent>
+        <modifier>0</modifier>
+        <key>0</key>
+        <repeat>16384</repeat>
+        <repeatFrequency>1</repeatFrequency>
+        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
+        <joystickName>Bravo Throttle Quadrant</joystickName>
+        <joystickButton>13</joystickButton>
+        <joystickPovControl>-1</joystickPovControl>
+        <joystickPovDirection>-1</joystickPovDirection>
+        <midiDeviceId>-1</midiDeviceId>
+        <midiChannel>-1</midiChannel>
+        <midiEvent>-1</midiEvent>
+        <endless>false</endless>
+        <midiEncoder>NONE</midiEncoder>
+        <isSimKey>false</isSimKey>
+        <comboSuppressesEvent>false</comboSuppressesEvent>
+        <comboIsToggle>false</comboIsToggle>
+        <fastTurn>false</fastTurn>
+        <timeoutMs>0</timeoutMs>
+        <virtualModifiers />
+        <virtualKeys />
+        <Action>WT_CJ4-right_rotary_dec</Action>
+      </GlobalHotkey>
+      <GlobalHotkey>
+        <downEvent>
+          <Group>WT_CJ4</Group>
+          <Description>RPN</Description>
+          <SimulatorEventName>WT_CJ4-right_rotary_inc</SimulatorEventName>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+          <ValueToSet>1</ValueToSet>
+          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
+          <type>SCRIPT</type>
+        </downEvent>
+        <modifier>0</modifier>
+        <key>0</key>
+        <repeat>16384</repeat>
+        <repeatFrequency>1</repeatFrequency>
+        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
+        <joystickName>Bravo Throttle Quadrant</joystickName>
+        <joystickButton>12</joystickButton>
+        <joystickPovControl>-1</joystickPovControl>
+        <joystickPovDirection>-1</joystickPovDirection>
+        <midiDeviceId>-1</midiDeviceId>
+        <midiChannel>-1</midiChannel>
+        <midiEvent>-1</midiEvent>
+        <endless>false</endless>
+        <midiEncoder>NONE</midiEncoder>
+        <isSimKey>false</isSimKey>
+        <comboSuppressesEvent>false</comboSuppressesEvent>
+        <comboIsToggle>false</comboIsToggle>
+        <fastTurn>false</fastTurn>
+        <timeoutMs>0</timeoutMs>
+        <virtualModifiers />
+        <virtualKeys />
+        <Action>WT_CJ4-right_rotary_inc</Action>
+      </GlobalHotkey>
+      <GlobalHotkey>
+        <downEvent>
+          <Description>WT_CJ4_AP_APPR_PRESSED</Description>
+          <SimulatorEventName>WT_CJ4_AP_APPR_PRESSED</SimulatorEventName>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+          <ValueToSet>1</ValueToSet>
+          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
+          <type>HTML</type>
+        </downEvent>
+        <modifier>0</modifier>
+        <key>0</key>
+        <repeat>16384</repeat>
+        <repeatFrequency>1</repeatFrequency>
+        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
+        <joystickName>Bravo Throttle Quadrant</joystickName>
+        <joystickButton>2</joystickButton>
+        <joystickPovControl>-1</joystickPovControl>
+        <joystickPovDirection>-1</joystickPovDirection>
+        <midiDeviceId>-1</midiDeviceId>
+        <midiChannel>-1</midiChannel>
+        <midiEvent>-1</midiEvent>
+        <endless>false</endless>
+        <midiEncoder>NONE</midiEncoder>
+        <isSimKey>false</isSimKey>
+        <comboSuppressesEvent>false</comboSuppressesEvent>
+        <comboIsToggle>false</comboIsToggle>
+        <fastTurn>false</fastTurn>
+        <timeoutMs>0</timeoutMs>
+        <virtualModifiers />
+        <virtualKeys />
+        <Action>WT_CJ4_AP_APPR_PRESSED</Action>
       </GlobalHotkey>
       <GlobalHotkey>
         <downEvent>
@@ -215,6 +350,72 @@
       </GlobalHotkey>
       <GlobalHotkey>
         <downEvent>
+          <Description>WT_CJ4_AP_NAV_PRESSED</Description>
+          <SimulatorEventName>WT_CJ4_AP_NAV_PRESSED</SimulatorEventName>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+          <ValueToSet>1</ValueToSet>
+          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
+          <type>HTML</type>
+        </downEvent>
+        <modifier>0</modifier>
+        <key>0</key>
+        <repeat>16384</repeat>
+        <repeatFrequency>1</repeatFrequency>
+        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
+        <joystickName>Bravo Throttle Quadrant</joystickName>
+        <joystickButton>1</joystickButton>
+        <joystickPovControl>-1</joystickPovControl>
+        <joystickPovDirection>-1</joystickPovDirection>
+        <midiDeviceId>-1</midiDeviceId>
+        <midiChannel>-1</midiChannel>
+        <midiEvent>-1</midiEvent>
+        <endless>false</endless>
+        <midiEncoder>NONE</midiEncoder>
+        <isSimKey>false</isSimKey>
+        <comboSuppressesEvent>false</comboSuppressesEvent>
+        <comboIsToggle>false</comboIsToggle>
+        <fastTurn>false</fastTurn>
+        <timeoutMs>0</timeoutMs>
+        <virtualModifiers />
+        <virtualKeys />
+        <Action>WT_CJ4_AP_NAV_PRESSED</Action>
+      </GlobalHotkey>
+      <GlobalHotkey>
+        <downEvent>
+          <Description>WT_CJ4_AP_VNAV_PRESSED</Description>
+          <SimulatorEventName>WT_CJ4_AP_VNAV_PRESSED</SimulatorEventName>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+          <ValueToSet>1</ValueToSet>
+          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
+          <type>HTML</type>
+        </downEvent>
+        <modifier>0</modifier>
+        <key>0</key>
+        <repeat>16384</repeat>
+        <repeatFrequency>1</repeatFrequency>
+        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
+        <joystickName>Bravo Throttle Quadrant</joystickName>
+        <joystickButton>3</joystickButton>
+        <joystickPovControl>-1</joystickPovControl>
+        <joystickPovDirection>-1</joystickPovDirection>
+        <midiDeviceId>-1</midiDeviceId>
+        <midiChannel>-1</midiChannel>
+        <midiEvent>-1</midiEvent>
+        <endless>false</endless>
+        <midiEncoder>NONE</midiEncoder>
+        <isSimKey>false</isSimKey>
+        <comboSuppressesEvent>false</comboSuppressesEvent>
+        <comboIsToggle>false</comboIsToggle>
+        <fastTurn>false</fastTurn>
+        <timeoutMs>0</timeoutMs>
+        <virtualModifiers />
+        <virtualKeys />
+        <Action>WT_CJ4_AP_VNAV_PRESSED</Action>
+      </GlobalHotkey>
+      <GlobalHotkey>
+        <downEvent>
           <Description>WT_CJ4_AP_VS_PRESSED</Description>
           <SimulatorEventName>WT_CJ4_AP_VS_PRESSED</SimulatorEventName>
           <MinValue>0</MinValue>
@@ -280,105 +481,6 @@
         <virtualKeys />
         <Action>AP_ALT_HOLD</Action>
       </GlobalHotkey>
-      <GlobalHotkey>
-        <downEvent>
-          <Description>WT_CJ4_AP_VNAV_PRESSED</Description>
-          <SimulatorEventName>WT_CJ4_AP_VNAV_PRESSED</SimulatorEventName>
-          <MinValue>0</MinValue>
-          <MaxValue>0</MaxValue>
-          <ValueToSet>1</ValueToSet>
-          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
-          <type>HTML</type>
-        </downEvent>
-        <modifier>0</modifier>
-        <key>0</key>
-        <repeat>16384</repeat>
-        <repeatFrequency>1</repeatFrequency>
-        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
-        <joystickName>Bravo Throttle Quadrant</joystickName>
-        <joystickButton>3</joystickButton>
-        <joystickPovControl>-1</joystickPovControl>
-        <joystickPovDirection>-1</joystickPovDirection>
-        <midiDeviceId>-1</midiDeviceId>
-        <midiChannel>-1</midiChannel>
-        <midiEvent>-1</midiEvent>
-        <endless>false</endless>
-        <midiEncoder>NONE</midiEncoder>
-        <isSimKey>false</isSimKey>
-        <comboSuppressesEvent>false</comboSuppressesEvent>
-        <comboIsToggle>false</comboIsToggle>
-        <fastTurn>false</fastTurn>
-        <timeoutMs>0</timeoutMs>
-        <virtualModifiers />
-        <virtualKeys />
-        <Action>WT_CJ4_AP_VNAV_PRESSED</Action>
-      </GlobalHotkey>
-      <GlobalHotkey>
-        <downEvent>
-          <Description>WT_CJ4_AP_NAV_PRESSED</Description>
-          <SimulatorEventName>WT_CJ4_AP_NAV_PRESSED</SimulatorEventName>
-          <MinValue>0</MinValue>
-          <MaxValue>0</MaxValue>
-          <ValueToSet>1</ValueToSet>
-          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
-          <type>HTML</type>
-        </downEvent>
-        <modifier>0</modifier>
-        <key>0</key>
-        <repeat>16384</repeat>
-        <repeatFrequency>1</repeatFrequency>
-        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
-        <joystickName>Bravo Throttle Quadrant</joystickName>
-        <joystickButton>1</joystickButton>
-        <joystickPovControl>-1</joystickPovControl>
-        <joystickPovDirection>-1</joystickPovDirection>
-        <midiDeviceId>-1</midiDeviceId>
-        <midiChannel>-1</midiChannel>
-        <midiEvent>-1</midiEvent>
-        <endless>false</endless>
-        <midiEncoder>NONE</midiEncoder>
-        <isSimKey>false</isSimKey>
-        <comboSuppressesEvent>false</comboSuppressesEvent>
-        <comboIsToggle>false</comboIsToggle>
-        <fastTurn>false</fastTurn>
-        <timeoutMs>0</timeoutMs>
-        <virtualModifiers />
-        <virtualKeys />
-        <Action>WT_CJ4_AP_NAV_PRESSED</Action>
-      </GlobalHotkey>
-      <GlobalHotkey>
-        <downEvent>
-          <Description>WT_CJ4_AP_APPR_PRESSED</Description>
-          <SimulatorEventName>WT_CJ4_AP_APPR_PRESSED</SimulatorEventName>
-          <MinValue>0</MinValue>
-          <MaxValue>0</MaxValue>
-          <ValueToSet>1</ValueToSet>
-          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
-          <type>HTML</type>
-        </downEvent>
-        <modifier>0</modifier>
-        <key>0</key>
-        <repeat>16384</repeat>
-        <repeatFrequency>1</repeatFrequency>
-        <joystickGuid>ceef08d0-656b-11eb-8001-444553540000</joystickGuid>
-        <joystickName>Bravo Throttle Quadrant</joystickName>
-        <joystickButton>2</joystickButton>
-        <joystickPovControl>-1</joystickPovControl>
-        <joystickPovDirection>-1</joystickPovDirection>
-        <midiDeviceId>-1</midiDeviceId>
-        <midiChannel>-1</midiChannel>
-        <midiEvent>-1</midiEvent>
-        <endless>false</endless>
-        <midiEncoder>NONE</midiEncoder>
-        <isSimKey>false</isSimKey>
-        <comboSuppressesEvent>false</comboSuppressesEvent>
-        <comboIsToggle>false</comboIsToggle>
-        <fastTurn>false</fastTurn>
-        <timeoutMs>0</timeoutMs>
-        <virtualModifiers />
-        <virtualKeys />
-        <Action>WT_CJ4_AP_APPR_PRESSED</Action>
-      </GlobalHotkey>
     </buttons>
     <axis />
     <overrideSaitekEvents />
@@ -387,5 +489,41 @@
     <desktopGaugesTemplateGuid>00000000-0000-0000-0000-000000000000</desktopGaugesTemplateGuid>
     <webGaugesTemplateGuid>00000000-0000-0000-0000-000000000000</webGaugesTemplateGuid>
   </template>
-  <scripts />
+  <scripts>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>left_rotary_alt</label>
+      <script>1 (&gt;L:wt_knob_selector, Number) 1 (&gt;K:ALTITUDE_BUG_SELECT)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>left_rotary_crs</label>
+      <script>4 (&gt;L:wt_knob_selector, Number)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>left_rotary_hdg</label>
+      <script>3 (&gt;L:wt_knob_selector, Number) 1 (&gt;K:HEADING_BUG_SELECT)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>left_rotary_ias</label>
+      <script>5 (&gt;L:wt_knob_selector, Number) 1 (&gt;K:AIRSPEED_BUG_SELECT)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>left_rotary_vs</label>
+      <script>2 (&gt;L:wt_knob_selector, Number) 1 (&gt;K:VSI_BUG_SELECT)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>right_rotary_dec</label>
+      <script>(L:wt_knob_selector, Number) 1 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 2 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 3 == if{ 1 (&gt;K:HEADING_BUG_DEC) } (L:wt_knob_selector, Number) 5 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) }</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>right_rotary_inc</label>
+      <script>(L:wt_knob_selector, Number) 1 == if{ 1 (&gt;K:KEY_PLUS, KeyEvent) } (L:wt_knob_selector, Number) 2 == if{ 1 (&gt;K:KEY_PLUS, KeyEvent) } (L:wt_knob_selector, Number) 3 == if{ 1 (&gt;K:HEADING_BUG_INC) } (L:wt_knob_selector, Number) 5 == if{ 1 (&gt;K:KEY_PLUS, KeyEvent) }</script>
+    </Script>
+  </scripts>
 </TemplateExport>
