@@ -18,23 +18,23 @@
     </Script>
     <Script>
       <group>WT_CJ4</group>
-      <label>left_rotary_crs</label>
-      <script>4 (&gt;L:wt_knob_selector, Number)</script>
-    </Script>
-    <Script>
-      <group>WT_CJ4</group>
       <label>left_rotary_hdg</label>
       <script>3 (&gt;L:wt_knob_selector, Number) 1 (&gt;K:HEADING_BUG_SELECT)</script>
     </Script>
     <Script>
       <group>WT_CJ4</group>
-      <label>right_rotary_dec</label>
-      <script>(L:wt_knob_selector, Number) 1 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 2 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 3 == if{ 1 (&gt;K:HEADING_BUG_DEC) } (L:wt_knob_selector, Number) 5 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) }</script>
+      <label>left_rotary_crs</label>
+      <script>4 (&gt;L:wt_knob_selector, Number)</script>
     </Script>
     <Script>
       <group>WT_CJ4</group>
       <label>right_rotary_inc</label>
-      <script>(L:wt_knob_selector, Number) 1 == if{ 1 (&gt;K:KEY_PLUS, KeyEvent) } (L:wt_knob_selector, Number) 2 == if{ 1 (&gt;K:KEY_PLUS, KeyEvent) } (L:wt_knob_selector, Number) 3 == if{ 1 (&gt;K:HEADING_BUG_INC) } (L:wt_knob_selector, Number) 5 == if{ 1 (&gt;K:KEY_PLUS, KeyEvent) }</script>
+      <script>(L:wt_knob_selector, Number) 1 == if{ 1 (&gt;K:KEY_PLUS, KeyEvent) } (L:wt_knob_selector, Number) 2 == if{ 1 (&gt;K:KEY_PLUS, KeyEvent) } (L:wt_knob_selector, Number) 3 == if{ 1 (&gt;K:HEADING_BUG_INC) } (L:wt_knob_selector, Number) 5 == if{ 1 (&gt;K:KEY_PLUS, KeyEvent) } (L:wt_knob_selector, Number) 4 == if{ 1 (L:WT_CJ4_LNAV_MODE, Number) } 2 == if{ (&gt;K:VOR2_OBI_INC) } els{ (&gt;K:VOR1_OBI_INC) }</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4</group>
+      <label>right_rotary_dec</label>
+      <script>(L:wt_knob_selector, Number) 1 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 2 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 3 == if{ 1 (&gt;K:HEADING_BUG_DEC) } (L:wt_knob_selector, Number) 5 == if{ 1 (&gt;K:KEY_MINUS, KeyEvent) } (L:wt_knob_selector, Number) 4 == if{ 1 (L:WT_CJ4_LNAV_MODE, Number) } 2 == if{ (A:NAV OBS:2, degree) 1 - dnor (&gt;K:VOR2_SET) } els{ (A:NAV OBS:1, degree) 1 - dnor (&gt;K:VOR1_SET) }</script>
     </Script>
   </scripts>
 </ScriptList>
