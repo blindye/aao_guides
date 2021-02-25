@@ -52,7 +52,7 @@ Download scripts [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/wt
 | Right rotary knob     | Script                  |
 | --------------------- | ----------------------- |
 | Turn left (decrease)  | WT_CJ4-right_rotary_dec |
-| Turn right (increase) | WT_CJ4-right_rotary_dec |
+| Turn right (increase) | WT_CJ4-right_rotary_inc |
 
 | AP button | Variable               |
 | --------- | ---------------------- |
