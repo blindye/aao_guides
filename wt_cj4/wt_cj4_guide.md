@@ -20,39 +20,54 @@ I'm using Honeycomb Bravo as an example but if you are using different periphera
 
 ## Setting up the AAO
 
-Download scripts [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/wt_cj4_scripts.xml) (Right Click -> Save file as.)
+- Launch MSFS 2020 and select CJ4 as aircraft and load up in your favorite airport (select runway so all systems are on).
+- Launch Axis and Oh's, make sure it recognizes the aircraft, CJ4 should be visible on top of the window.
+- Click green circle next to Tools menu, it should disconnect Axis and Oh's from the sim (Connect to simulator visible)
+- Go to Scripting -> Read HVARs from Sim, wait until it's done.
+- Click green circle again to connect to sim.
+- Go to Scripting -> Read LVARs from Sim, wait until it's done.
+
+
+
+## Using the template (Recommended)
+
+**This is only for Honeycomb Bravo**
+
+If you have already set up profile for earlier versions, delete assignments from AAO shown in "Setting assignmens".
+
+
+
+Download template [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/WT_CJ4_v2.tmpl) (Right Click -> Save file as.)
+
+- Import template to AAO from Templates -> Import Template. Find the downloaded .tmpl file and open. Click Import.
+- After import is finished, go to Templates -> Apply template to this aircraft. Select WT_CJ4_v2 from the list, click Apply.
+- Click Merge. AAO should recognize HC Bravo automatically and all should be now set. Happy flying.
+
+
+
+## Importing scripts (only needed if setting bindings manually)
+
+Download scripts [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/WT_CJ4_v2_scripts.xml) (Right Click -> Save file as.)
 
 - Import scripts to AAO from Scripting -> Import Scripts. Find the downloaded .XML file and import it
-
-- Launch MSFS 2020 and select CJ4 as aircraft and load up in your favorite airport (select runway so all systems are on).
-
-- Launch Axis and Oh's, make sure it recognizes the aircraft, CJ4 should be visible on top of the window.
-
-- Click green circle next to Tools menu, it should disconnect Axis and Oh's from the sim (Connect to simulator visible)
-
-- Go to Scripting -> Read HVARs from Sim, wait until it's done.
-
-- Click green circle again to connect to sim.
-
-- Go to Scripting -> Read LVARs from Sim, wait until it's done.
 
 
 
 
 ## Setting assignments
 
-| Left rotary knob | Script                 |
-| ---------------- | ---------------------- |
-| ALT              | WT_CJ4-left_rotary_alt |
-| VS               | WT_CJ4-left_rotary_vs  |
-| HDG              | WT_CJ4-left_rotary_hdg |
-| CRS              | WT_CJ4-left_rotary_crs |
-| IAS              | WT_CJ4-left_rotary_ias |
+| Left rotary knob | Script                    |
+| ---------------- | ------------------------- |
+| ALT              | WT_CJ4_v2-left_rotary_alt |
+| VS               | WT_CJ4_v2-left_rotary_vs  |
+| HDG              | WT_CJ4_v2-left_rotary_hdg |
+| CRS              | WT_CJ4_v2-left_rotary_crs |
+| IAS              | WT_CJ4_v2-left_rotary_ias |
 
-| Right rotary knob     | Script                  |
-| --------------------- | ----------------------- |
-| Turn left (decrease)  | WT_CJ4-right_rotary_dec |
-| Turn right (increase) | WT_CJ4-right_rotary_inc |
+| Right rotary knob     | Script                     |
+| --------------------- | -------------------------- |
+| Turn left (decrease)  | WT_CJ4_v2-right_rotary_dec |
+| Turn right (increase) | WT_CJ4_v2-right_rotary_inc |
 
 | AP button | Variable               |
 | --------- | ---------------------- |
@@ -60,13 +75,15 @@ Download scripts [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/wt
 | NAV       | WT_CJ4_AP_NAV_PRESSED  |
 | APR       | WT_CJ4_AP_APPR_PRESSED |
 | REV       | WT_CJ4_AP_VNAV_PRESSED |
-| ALT       | AP_ALT_HOLD            |
+| ALT       | WT_CJ4_AP_ALT_PRESSED  |
 | VS        | WT_CJ4_AP_VS_PRESSED   |
 | IAS       | WT_CJ4_AP_FLC_PRESSED  |
 
 
 
-## Video guide
+## Video guide (outdated) 
+
+Might still be helpful, some bindings are different in latest version.
 
 <div align="left">
       <a href="https://www.youtube.com/watch?v=787Uf6bmZ5Q">
@@ -80,7 +97,7 @@ Download scripts [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/wt
 
 MSFS 2020 currently has a bug if some button is assigned inside sim which is pressed on always. Heading and altitude selecting won't work properly when this bug occurs. Heading will go in 10 increments (instead of 1) and altitude in 1000 increments (instead of 100) . In Honeycomb Bravo these are like Gear handle and all on/off switches. To prevent this bug you have to unbind all buttons that are active all time. These buttons will be highlighted as white in Controls settings. 
 
-Most of these can be assigned through AAO.
+All of these can be assigned through AAO.
 
 For example gear handle can be assigned as Key down event: GEAR_UP and GEAR_DOWN.
 
@@ -89,4 +106,5 @@ For example gear handle can be assigned as Key down event: GEAR_UP and GEAR_DOWN
 ## Known issues
 
 - Clicking sounds doesn't play
+- No animations of rotary knobs
 

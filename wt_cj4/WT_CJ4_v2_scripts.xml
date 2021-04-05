@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scripts>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>left_rotary_alt</label>
+      <script>1 (&gt;L:wt_knob_selector, Number)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>left_rotary_crs</label>
+      <script>4 (&gt;L:wt_knob_selector, Number)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>left_rotary_ias</label>
+      <script>5 (&gt;L:wt_knob_selector, Number)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>left_rotary_vs</label>
+      <script>2 (&gt;L:wt_knob_selector, Number)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>alt_dec</label>
+      <script>0 1 0 (&gt;K:2:AP_ALT_VAR_DEC)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>alt_inc</label>
+      <script>0 1 0 (&gt;K:2:AP_ALT_VAR_INC)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>hdg_dec</label>
+      <script>1 (&gt;K:HEADING_BUG_DEC)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>hdg_inc</label>
+      <script>1 (&gt;K:HEADING_BUG_INC)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>crs1_dec</label>
+      <script>(L:WT_CJ4_LNAV_MODE, Number) 2 == if{ (&gt;K:VOR2_OBI_DEC) } els{ (&gt;K:VOR1_OBI_DEC) }</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>crs1_inc</label>
+      <script>(L:WT_CJ4_LNAV_MODE, Number) 2 == if{ (&gt;K:VOR2_OBI_INC) } els{ (&gt;K:VOR1_OBI_INC) }</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>ias_inc</label>
+      <script>(L:XMLVar_AirspeedIsInMach, Bool) if{ (&gt;K:AP_MACH_VAR_INC) } els{ (&gt;K:AP_SPD_VAR_INC) }</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>ias_dec</label>
+      <script>(L:XMLVar_AirspeedIsInMach, Bool) if{ (&gt;K:AP_MACH_VAR_DEC) } els{ (&gt;K:AP_SPD_VAR_DEC) }</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>vs_dec</label>
+      <script>(A:AUTOPILOT VERTICAL HOLD, bool) if{ (&gt;K:AP_VS_VAR_DEC) } els{ (&gt;K:AP_PITCH_REF_INC_DN) }</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>vs_inc</label>
+      <script>(A:AUTOPILOT VERTICAL HOLD, bool) if{ (&gt;K:AP_VS_VAR_INC) } els{ (&gt;K:AP_PITCH_REF_INC_UP) }</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>left_rotary_hdg</label>
+      <script>3 (&gt;L:wt_knob_selector, Number)</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>right_rotary_inc</label>
+      <script>(L:wt_knob_selector, Number) 1 == if{ 1 (&gt;K:WT_CJ4_v2-alt_inc) } (L:wt_knob_selector, Number) 2 == if{ 1 (&gt;K:WT_CJ4_v2-vs_inc) } (L:wt_knob_selector, Number) 3 == if{ 1 (&gt;K:WT_CJ4_v2-hdg_inc) } (L:wt_knob_selector, Number) 5 == if{ 1 (&gt;K:WT_CJ4_v2-ias_inc) } (L:wt_knob_selector, Number) 4 == if{ 1 (&gt;K:WT_CJ4_v2-crs1_inc) }</script>
+    </Script>
+    <Script>
+      <group>WT_CJ4_v2</group>
+      <label>right_rotary_dec</label>
+      <script>(L:wt_knob_selector, Number) 1 == if{ 1 (&gt;K:WT_CJ4_v2-alt_dec) } (L:wt_knob_selector, Number) 2 == if{ 1 (&gt;K:WT_CJ4_v2-vs_dec) } (L:wt_knob_selector, Number) 3 == if{ 1 (&gt;K:WT_CJ4_v2-hdg_dec) } (L:wt_knob_selector, Number) 5 == if{ 1 (&gt;K:WT_CJ4_v2-ias_dec) } (L:wt_knob_selector, Number) 4 == if{ 1 (&gt;K:WT_CJ4_v2-crs1_dec) }</script>
+    </Script>
+  </scripts>
+</ScriptList>
