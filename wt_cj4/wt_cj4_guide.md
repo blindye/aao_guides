@@ -27,6 +27,8 @@ I'm using Honeycomb Bravo as an example but if you are using different periphera
 - Click green circle again to connect to sim.
 - Go to Scripting -> Read LVARs from Sim, wait until it's done.
 
+- Download scripts [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/WT_CJ4_v2_scripts.xml) (Right Click -> Save file as.) *Needed when using template and when setting up assignments manually*
+- Import scripts to AAO from Scripting -> Import Scripts. Find the downloaded .XML file and import it
 
 
 ## Using the template (Recommended)
@@ -39,22 +41,13 @@ If you have already set up profile for earlier versions, delete assignments from
 
 Download template [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/WT_CJ4_v2.tmpl) (Right Click -> Save file as.)
 
+- Make sure you have imported the scripts from above
 - Import template to AAO from Templates -> Import Template. Find the downloaded .tmpl file and open. Click Import.
 - After import is finished, go to Templates -> Apply template to this aircraft. Select WT_CJ4_v2 from the list, click Apply.
 - Click Merge. AAO should recognize HC Bravo automatically and all should be now set. Happy flying.
 
 
-
-## Importing scripts (only needed if setting bindings manually)
-
-Download scripts [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/WT_CJ4_v2_scripts.xml) (Right Click -> Save file as.)
-
-- Import scripts to AAO from Scripting -> Import Scripts. Find the downloaded .XML file and import it
-
-
-
-
-## Setting assignments
+## Setting assignments manually
 
 | Left rotary knob | Script                    |
 | ---------------- | ------------------------- |
