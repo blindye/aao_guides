@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scripts>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>spd_inc</label>
+      <script>1 (&gt;H:A320_Neo_FCU_SPEED_INC)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>spd_dec</label>
+      <script>1 (&gt;H:A320_Neo_FCU_SPEED_DEC)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>spd_mode_push</label>
+      <script>1 (&gt;H:A320_Neo_FCU_SPEED_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>spd_mode_pull</label>
+      <script>1 (&gt;H:A320_Neo_FCU_SPEED_PULL)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>hdg_inc</label>
+      <script>1 (&gt;H:A320_Neo_FCU_HDG_INC_HEADING)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>hdg_dec</label>
+      <script>1 (&gt;H:A320_Neo_FCU_HDG_DEC_HEADING)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>hdg_mode_push</label>
+      <script>1 (&gt;H:A320_NEO_FCU_HDG_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>hdg_mode_pull</label>
+      <script>1 (&gt;H:A320_NEO_FCU_HDG_PULL)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>ap1_push</label>
+      <script>1 (&gt;H:A320_Neo_FCU_AP_1_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>ap2_push</label>
+      <script>1 (&gt;H:A320_Neo_FCU_AP_2_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>loc_btn</label>
+      <script>1 (&gt;H:A320_Neo_FCU_LOC_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>appr_btn</label>
+      <script>1 (&gt;H:A320_Neo_FCU_APPR_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>vs_inc</label>
+      <script>1 (&gt;H:A320_Neo_FCU_VS_INC_VS)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>vs_dec</label>
+      <script>1 (&gt;H:A320_Neo_FCU_VS_DEC_VS)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>vs_mode_push</label>
+      <script>1 (&gt;H:A320_Neo_FCU_VS_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>vs_mode_pull</label>
+      <script>1 (&gt;H:A320_Neo_FCU_VS_PULL)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>alt_mode_pull</label>
+      <script>1 (&gt;H:A320_Neo_FCU_ALT_PULL) 1 (&gt;H:A320_Neo_CDU_MODE_SELECTED_ALTITUDE)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>alt_mode_push</label>
+      <script>1 (&gt;H:A320_Neo_FCU_ALT_PUSH) 1 (&gt;H:A320_Neo_CDU_MODE_MANAGED_ALTITUDE)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>left_rotary_alt</label>
+      <script>1 (&gt;L:fbw_knob_selector, number)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>left_rotary_crs</label>
+      <script>4 (&gt;L:fbw_knob_selector, number)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>left_rotary_hdg</label>
+      <script>3 (&gt;L:fbw_knob_selector, number)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>left_rotary_ias</label>
+      <script>5 (&gt;L:fbw_knob_selector, number)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>left_rotary_vs</label>
+      <script>2 (&gt;L:fbw_knob_selector, number) 1 (&gt;K:VSI_BUG_SELECT)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>right_rotary_dec</label>
+      <script>(L:fbw_knob_selector, number) 1 == if{ 1 (&gt;K:FBW_a32nx_exp-alt_dec) } (L:fbw_knob_selector, number) 3 == if{ 1 (&gt;K:FBW_a32nx_exp-hdg_dec) } (L:fbw_knob_selector, number) 2 == if{ 1 (&gt;K:FBW_a32nx_exp-vs_dec) } (L:fbw_knob_selector, number) 5 == if{ 1 (&gt;K:FBW_a32nx_exp-spd_dec) }</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>alt_inc</label>
+      <script>3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, feet) (L:XMLVAR_Autopilot_Altitude_Increment, Number) + (A:AUTOPILOT ALTITUDE LOCK VAR:3, feet) (L:XMLVAR_Autopilot_Altitude_Increment, Number) % - 49000 min (&gt;K:2:AP_ALT_VAR_SET_ENGLISH) (&gt;H:AP_KNOB_Up, Number) 1 (&gt;H:A320_Neo_CDU_AP_INC_ALT)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>alt_dec</label>
+      <script>3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, Feet) (L:XMLVAR_Autopilot_Altitude_Increment) &gt;= if{ 3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, Feet) (L:XMLVAR_Autopilot_Altitude_Increment) - (&gt;K:2:AP_ALT_VAR_SET_ENGLISH) (&gt;H:AP_KNOB_Down) (&gt;H:A320_Neo_CDU_AP_DEC_ALT) }</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_exp</group>
+      <label>right_rotary_inc</label>
+      <script>(L:fbw_knob_selector, number) 1 == if{ 1 (&gt;K:FBW_a32nx_exp-alt_inc) } (L:fbw_knob_selector, number) 3 == if{ 1 (&gt;K:FBW_a32nx_exp-hdg_inc) } (L:fbw_knob_selector, number) 2 == if{ 1 (&gt;K:FBW_a32nx_exp-vs_inc) } (L:fbw_knob_selector, number) 5 == if{ 1 (&gt;K:FBW_a32nx_exp-spd_inc) }</script>
+    </Script>
+  </scripts>
+</ScriptList>

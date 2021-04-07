@@ -27,27 +27,31 @@ I'm using Honeycomb Bravo as an example but if you are using different periphera
 - Click green circle again to connect to sim.
 - Go to Scripting -> Read LVARs from Sim, wait until it's done.
 
-- Download scripts [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/WT_CJ4_v2_scripts.xml) (Right Click -> Save file as.) *Needed when using template and when setting up assignments manually*
-- Import scripts to AAO from Scripting -> Import Scripts. Find the downloaded .XML file and import it
+
 
 
 ## Using the template (Recommended)
 
-**This is only for Honeycomb Bravo**
+**Template is only for Honeycomb Bravo**
 
-If you have already set up profile for earlier versions, delete assignments from AAO shown in "Setting assignmens".
+*If you have already set up profile for earlier versions, delete assignments from AAO shown in "Setting assignmens"*
 
 
 
-Download template [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/WT_CJ4_v2.tmpl) (Right Click -> Save file as.)
+Download latest release [here](https://github.com/blindye/aao_guides/releases/)
 
-- Make sure you have imported the scripts from above
-- Import template to AAO from Templates -> Import Template. Find the downloaded .tmpl file and open. Click Import.
+- Extract the zip file
+- Import scripts file (xml) to AAO from Scripts -> Import scripts. Open the xml file from downloaded release zip.
+- Import template to AAO from Templates -> Import Template. Open the .tmpl file and open. Click Import.
 - After import is finished, go to Templates -> Apply template to this aircraft. Select WT_CJ4_v2 from the list, click Apply.
 - Click Merge. AAO should recognize HC Bravo automatically and all should be now set. Happy flying.
+- Disconnect AAO from Sim by clicking green circle in AAO, then connect it again. All should be  working now.
+
 
 
 ## Setting assignments manually
+
+**Make sure you have imported scripts from the release zip file**
 
 | Left rotary knob | Script                    |
 | ---------------- | ------------------------- |
@@ -76,7 +80,7 @@ Download template [here](https://github.com/blindye/aao_guides/raw/main/wt_cj4/W
 
 ## Video guide (outdated) 
 
-Might still be helpful, some bindings are different in latest version.
+*Might still be helpful, some bindings are different in latest version*
 
 <div align="left">
       <a href="https://www.youtube.com/watch?v=787Uf6bmZ5Q">
