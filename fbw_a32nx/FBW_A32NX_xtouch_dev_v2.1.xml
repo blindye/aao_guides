@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scripts>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>baro_dec</label>
+      <script>1 (&gt;K:KOHLSMAN_DEC)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>baro_inc</label>
+      <script>1 (&gt;K:KOHLSMAN_INC)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>baro_inhg_hpa</label>
+      <script>(L:XMLVAR_Baro_Selector_HPA_1, Bool) ! (&gt;L:XMLVAR_Baro_Selector_HPA_1, Bool)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>com_chooser</label>
+      <script>(L:fbw_com_chooser) 0 == if{ 1 (&gt;L:fbw_com_chooser) } els{ 0 (&gt;L:fbw_com_chooser) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>FD_toggle</label>
+      <script>1 (&gt;K:TOGGLE_FLIGHT_DIRECTOR)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>SPLRS_lever</label>
+      <script>(L:FBW_A32nx_Xtouch-SPLRS_lever) (&gt;K:SPOILERS_SET) (A:SPOILERS ARMED, Bool) if{ (&gt;K:SPOILERS_ARM_OFF) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>rwy_turnoff</label>
+      <script>2 (&gt;K:TOGGLE_TAXI_LIGHTS) 3 (&gt;K:TOGGLE_TAXI_LIGHTS)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>ldg_lights_onoff</label>
+      <script>0 (&gt;L:LANDING_1_Retracted, Bool) 2 (&gt;K:LANDING_LIGHTS_TOGGLE) 0 (&gt;L:LANDING_2_Retracted, Bool) 3 (&gt;K:LANDING_LIGHTS_TOGGLE)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>ldg_lights_retract</label>
+      <script>(L:LANDING_1_Retracted, Bool) 0 == if{ 1 (&gt;L:LANDING_1_Retracted, Bool) } els{ 0 (&gt;L:LANDING_1_Retracted, Bool) } (L:LANDING_2_Retracted, Bool) 0 == if{ 1 (&gt;L:LANDING_2_Retracted, Bool) } els{ 0 (&gt;L:LANDING_2_Retracted, Bool) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>spd_mach_kt</label>
+      <script>(&gt;K:AP_MANAGED_SPEED_IN_MACH_TOGGLE)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>alt_dec</label>
+      <script>SIMPROC:3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, feet) (L:XMLVAR_Autopilot_Altitude_Increment) - max (&gt;K:2:AP_ALT_VAR_SET_ENGLISH) (&gt;H:AP_KNOB_Down) (&gt;H:A320_Neo_CDU_AP_DEC_ALT)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>alt_inc</label>
+      <script>SIMPROC:3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, feet) (L:XMLVAR_Autopilot_Altitude_Increment, feet) + (&gt;K:2:AP_ALT_VAR_SET_ENGLISH) (&gt;H:AP_KNOB_Up) (&gt;H:A320_Neo_CDU_AP_INC_ALT)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>com_DEC</label>
+      <script>(L:fbw_com_chooser) 0 == if{ (&gt;H:A32NX_RMP_L_OUTER_KNOB_TURNED_ANTICLOCKWISE) } els{ (&gt;H:A32NX_RMP_L_INNER_KNOB_TURNED_ANTICLOCKWISE) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>com_INC</label>
+      <script>(L:fbw_com_chooser) 0 == if{ (&gt;H:A32NX_RMP_L_OUTER_KNOB_TURNED_CLOCKWISE) } els{ (&gt;H:A32NX_RMP_L_INNER_KNOB_TURNED_CLOCKWISE) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>com_transfer</label>
+      <script>(&gt;H:A32NX_RMP_L_TRANSFER_BUTTON_PRESSED)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>LS_toggle</label>
+      <script>(&gt;H:A320_Neo_MFD_BTN_LS_1) (&gt;H:A320_Neo_PFD_BTN_LS_1)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>alt_incr_selector</label>
+      <script>SIMPROC:(L:XMLVAR_Autopilot_Altitude_Increment) 100 == if{ 1000 (&gt;L:XMLVAR_Autopilot_Altitude_Increment) } els{ 100 (&gt;L:XMLVAR_Autopilot_Altitude_Increment) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>wing_anti_ice</label>
+      <script>SIMPROC:(&gt;K:TOGGLE_STRUCTURAL_DEICE) (L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_WING_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_WING_Pressed)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>eng1_anti_ice</label>
+      <script>SIMPROC:(&gt;K:ANTI_ICE_TOGGLE_ENG1) (L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_ENG1_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_ENG1_Pressed)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>eng2_anti_ice</label>
+      <script>SIMPROC:(&gt;K:ANTI_ICE_TOGGLE_ENG2) (L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_ENG2_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_ENG2_Pressed)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>adirs2</label>
+      <script>SIMPROC:(L:A32NX_ADIRS_KNOB_2, number) 0 == if{ 1 (&gt;L:A32NX_ADIRS_KNOB_2, number) } els{ (L:A32NX_ADIRS_KNOB_2, number) 1 == if{ 2 (&gt;L:A32NX_ADIRS_KNOB_2, number) } els{ (L:A32NX_ADIRS_KNOB_2, number) 2 == if{ 0 (&gt;L:A32NX_ADIRS_KNOB_2, number) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>adirs1</label>
+      <script>SIMPROC:(L:A32NX_ADIRS_KNOB_1, number) 0 == if{ 1 (&gt;L:A32NX_ADIRS_KNOB_1, number) } els{ (L:A32NX_ADIRS_KNOB_1, number) 1 == if{ 2 (&gt;L:A32NX_ADIRS_KNOB_1, number) } els{ (L:A32NX_ADIRS_KNOB_1, number) 2 == if{ 0 (&gt;L:A32NX_ADIRS_KNOB_1, number) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>adirs3</label>
+      <script>SIMPROC:(L:A32NX_ADIRS_KNOB_3, number) 0 == if{ 1 (&gt;L:A32NX_ADIRS_KNOB_3, number) } els{ (L:A32NX_ADIRS_KNOB_3, number) 1 == if{ 2 (&gt;L:A32NX_ADIRS_KNOB_3, number) } els{ (L:A32NX_ADIRS_KNOB_3, number) 2 == if{ 0 (&gt;L:A32NX_ADIRS_KNOB_3, number) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>nav_logo_lights</label>
+      <script>0 (&gt;K:TOGGLE_NAV_LIGHTS) 0 (&gt;K:TOGGLE_LOGO_LIGHTS)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>apu_bleed</label>
+      <script>SIMPROC:(L:A32NX_OVHD_PNEU_APU_BLEED_PB_IS_ON, Bool) ! (&gt;L:A32NX_OVHD_PNEU_APU_BLEED_PB_IS_ON, Bool)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>seatbelt_lt</label>
+      <script>SIMPROC:(L:XMLVAR_SWITCH_OVHD_INTLT_SEATBELT_Position) ! (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_SEATBELT_Position)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>nosmoking_lt</label>
+      <script>SIMPROC:(L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position) 0 == if{ 2 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position) } els{ (L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position) 1 == if{ 0 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position) } els{ (L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position) 2 == if{ 1 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>emer_exit_lt</label>
+      <script>SIMPROC:(L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position) 0 == if{ 2 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position) } els{ (L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position) 1 == if{ 0 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position) } els{ (L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position) 2 == if{ 1 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>oxy_crew</label>
+      <script>SIMPROC:(L:PUSH_OVHD_OXYGEN_CREW, Bool) ! (&gt;L:PUSH_OVHD_OXYGEN_CREW)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>MFD_NAV_mode_dec</label>
+      <script>SIMPROC:(L:A320_Neo_MFD_NAV_MODE_1, Number) 0 &gt; if{ (L:A320_Neo_MFD_NAV_MODE_1, Number) 1 - (&gt;L:A320_Neo_MFD_NAV_MODE_1, Number) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>MFD_NAV_mode_inc</label>
+      <script>SIMPROC:(L:A320_Neo_MFD_NAV_MODE_1, Number) 3 &lt;= if{ (L:A320_Neo_MFD_NAV_MODE_1, Number) 1 + (&gt;L:A320_Neo_MFD_NAV_MODE_1, Number)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>MFD_NAV_range_dec</label>
+      <script>SIMPROC:(L:A320_Neo_MFD_Range_1, Number, Number) 0 &gt; if{ (L:A320_Neo_MFD_Range_1, Number) 1 - (&gt;L:A320_Neo_MFD_Range_1, Number) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>MFD_NAV_range_inc</label>
+      <script>SIMPROC:(L:A320_Neo_MFD_Range_1, Number, Number) 4 &lt;= if{ (L:A320_Neo_MFD_Range_1, Number) 1 + (&gt;L:A320_Neo_MFD_Range_1, Number) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>baro_std_push</label>
+      <script>SIMPROC:(L:XMLVAR_Baro1_Mode, Bool) 2 == if{ 1 (&gt;L:XMLVAR_Baro1_Mode, Bool) } els{ 2 (&gt;L:XMLVAR_Baro1_Mode, Bool) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>dome_light_toggle</label>
+      <script>SIMPROC:(A:LIGHT CABIN:0, Percent) 0 == if{ 0 (&gt;K:TOGGLE_CABIN_LIGHTS) 50 (&gt;K:LIGHT_POTENTIOMETER_7_SET) } els{ (A:LIGHT CABIN:0, Percent) 50 == if{ 0 (&gt;K:TOGGLE_CABIN_LIGHTS) 100 (&gt;K:LIGHT_POTENTIOMETER_7_SET) } els{ (A:LIGHT CABIN:0, Percent) 100 == if{ 0 (&gt;K:TOGGLE_CABIN_LIGHTS) 0 (&gt;K:LIGHT_POTENTIOMETER_7_SET) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>ecam_lower_brg_dec</label>
+      <script>SIMPROC:(A:LIGHT POTENTIOMETER:93, Percent) 10 - 0 max 93 (&gt;K:2:LIGHT_POTENTIOMETER_SET)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>ecam_lower_brg_inc</label>
+      <script>SIMPROC:(A:LIGHT POTENTIOMETER:93, Percent) 10 + 100 min 93 (&gt;K:2:LIGHT_POTENTIOMETER_SET)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>ecam_upper_brg_dec</label>
+      <script>SIMPROC:(A:LIGHT POTENTIOMETER:92, Percent) 10 - 0 max 92 (&gt;K:2:LIGHT_POTENTIOMETER_SET)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>ecam_upper_brg_inc</label>
+      <script>SIMPROC:(A:LIGHT POTENTIOMETER:92, Percent) 10 + 100 min 92 (&gt;K:2:LIGHT_POTENTIOMETER_SET)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>nd_brg_dec</label>
+      <script>SIMPROC:(A:LIGHT POTENTIOMETER:89, Percent) 10 - 0 max 89 (&gt;K:2:LIGHT_POTENTIOMETER_SET) (A:LIGHT POTENTIOMETER:91, Percent) 10 - 0 max 91 (&gt;K:2:LIGHT_POTENTIOMETER_SET)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>nd_brg_inc</label>
+      <script>SIMPROC:(A:LIGHT POTENTIOMETER:89, Percent) 10 + 100 min 89 (&gt;K:2:LIGHT_POTENTIOMETER_SET) (A:LIGHT POTENTIOMETER:91, Percent) 10 + 100 min 91 (&gt;K:2:LIGHT_POTENTIOMETER_SET)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>ovhd_integ_lt_dec</label>
+      <script>SIMPROC:(A:LIGHT POTENTIOMETER:86, Percent) 10 - 0 max 86 (&gt;K:2:LIGHT_POTENTIOMETER_SET) (A:LIGHT PANEL:4, Bool) (A:LIGHT POTENTIOMETER:86, Percent) 0 == and if{ 4 0 (&gt;K:2:PANEL_LIGHTS_SET) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>ovhd_integ_lt_inc</label>
+      <script>SIMPROC:(A:LIGHT PANEL:4, Bool) ! if{ 4 1 (&gt;K:2:PANEL_LIGHTS_SET) } (A:LIGHT POTENTIOMETER:86, Percent) 10 + 100 min 86 (&gt;K:2:LIGHT_POTENTIOMETER_SET)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>pdf_brg_dec</label>
+      <script>SIMPROC:(A:LIGHT POTENTIOMETER:88, Percent) 10 - 0 max 88 (&gt;K:2:LIGHT_POTENTIOMETER_SET) (A:LIGHT POTENTIOMETER:90, Percent) 10 - 0 max 90 (&gt;K:2:LIGHT_POTENTIOMETER_SET)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>pdf_brg_inc</label>
+      <script>SIMPROC:(A:LIGHT POTENTIOMETER:88, Percent) 10 + 100 min 88 (&gt;K:2:LIGHT_POTENTIOMETER_SET) (A:LIGHT POTENTIOMETER:90, Percent) 10 + 100 min 90 (&gt;K:2:LIGHT_POTENTIOMETER_SET)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>pedestal_lt_dec</label>
+      <script>SIMPROC:(A:LIGHT POTENTIOMETER:85, Percent) 10 - 0 max 85 (&gt;K:2:LIGHT_POTENTIOMETER_SET) (A:LIGHT PANEL:1, Bool) (A:LIGHT POTENTIOMETER:85, Percent) 0 == and if{ 1 0 (&gt;K:2:PANEL_LIGHTS_SET) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>pedestal_lt_inc</label>
+      <script>SIMPROC:(A:LIGHT PANEL:1, Bool) ! if{ 1 1 (&gt;K:2:PANEL_LIGHTS_SET) } (A:LIGHT POTENTIOMETER:85, Percent) 10 + 100 min 85 (&gt;K:2:LIGHT_POTENTIOMETER_SET)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>call_cabin</label>
+      <script>SIMPROC:1 (&gt;L:PUSH_OVHD_CALLS_FWD)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>taxi_to_lights</label>
+      <script>(A:LIGHT TAXI:1, Bool) 0 == if{ 1 (&gt;K:TOGGLE_TAXI_LIGHTS) } els{ 1 (&gt;K:LANDING_LIGHTS_TOGGLE) } (A:LIGHT LANDING:1, Bool) 1 == if{ 1 (&gt;K:TOGGLE_TAXI_LIGHTS) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>strobes_toggle</label>
+      <script>(A:LIGHT STROBE:0, Percent) 0 == if{ (&gt;K:STROBES_ON) } els{ (&gt;K:STROBES_OFF) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>beacon_lights_toggle</label>
+      <script>0 (&gt;K:TOGGLE_BEACON_LIGHTS)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>alt_mode_managed</label>
+      <script>(&gt;H:A320_Neo_FCU_ALT_PUSH) (&gt;H:A320_Neo_CDU_MODE_MANAGED_ALTITUDE)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>alt_mode_selected</label>
+      <script>(&gt;H:A320_Neo_FCU_ALT_PULL) (&gt;H:A320_Neo_CDU_MODE_SELECTED_ALTITUDE)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>AP1_btn</label>
+      <script>(&gt;H:A320_Neo_FCU_AP_1_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>AP2_btn</label>
+      <script>(&gt;H:A320_Neo_FCU_AP_2_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>APPR_btn</label>
+      <script>(&gt;H:A320_Neo_FCU_APPR_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>apu_master_sw</label>
+      <script>SIMPROC:(L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON, Bool) ! (&gt;L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>apu_start</label>
+      <script>SIMPROC:(L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON, Bool) if{ 1 (&gt;L:A32NX_OVHD_APU_START_PB_IS_ON) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>ATHR_btn</label>
+      <script>SIMPROC:1 (&gt;K:AUTO_THROTTLE_ARM)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>bat1_push</label>
+      <script>SIMPROC:(L:A32NX_OVHD_ELEC_BAT_10_PB_IS_AUTO, Bool) if{ 0 (&gt;L:A32NX_OVHD_ELEC_BAT_10_PB_IS_AUTO) } els{ 1 (&gt;L:A32NX_OVHD_ELEC_BAT_10_PB_IS_AUTO) } (L:XMLVAR_Momentary_PUSH_OVHD_ELEC_BAT1_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ELEC_BAT1_Pressed)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>bat2_push</label>
+      <script>SIMPROC:(L:A32NX_OVHD_ELEC_BAT_11_PB_IS_AUTO, Bool) if{ 0 (&gt;L:A32NX_OVHD_ELEC_BAT_11_PB_IS_AUTO) } els{ 1 (&gt;L:A32NX_OVHD_ELEC_BAT_11_PB_IS_AUTO) } (L:XMLVAR_Momentary_PUSH_OVHD_ELEC_BAT2_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ELEC_BAT2_Pressed)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>ext_pwr</label>
+      <script>SIMPROC:(A:EXTERNAL POWER AVAILABLE:1, Bool) (A:EXTERNAL POWER ON:1, Bool) ! and if{ 1 (&gt;K:TOGGLE_EXTERNAL_POWER) } els{ (A:EXTERNAL POWER ON:1, Bool) if{ 1 (&gt;K:TOGGLE_EXTERNAL_POWER) } }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>spd_dec</label>
+      <script>SIMPROC:(&gt;H:A320_Neo_FCU_SPEED_DEC)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>spd_inc</label>
+      <script>SIMPROC:(&gt;H:A320_Neo_FCU_SPEED_INC)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>spd_mode_managed</label>
+      <script>(&gt;H:A320_Neo_FCU_SPEED_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>spd_mode_selected</label>
+      <script>(&gt;H:A320_Neo_FCU_SPEED_PULL)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>hdg_dec</label>
+      <script>SIMPROC:(L:A32NX_TRK_FPA_MODE_ACTIVE, bool) 1 == if{ (&gt;H:A320_Neo_FCU_HDG_DEC_TRACK) } els{ (&gt;H:A320_Neo_FCU_HDG_DEC_HEADING) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>hdg_inc</label>
+      <script>SIMPROC:(L:A32NX_TRK_FPA_MODE_ACTIVE, bool) 1 == if{ (&gt;H:A320_Neo_FCU_HDG_INC_TRACK) } els{ (&gt;H:A320_Neo_FCU_HDG_INC_HEADING) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>hdg_mode_managed</label>
+      <script>(&gt;H:A320_Neo_FCU_HDG_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>hdg_mode_selected</label>
+      <script>(&gt;H:A320_Neo_FCU_HDG_PULL)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>LOC_btn</label>
+      <script>SIMPROC:(&gt;H:A320_Neo_FCU_LOC_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>vs_dec</label>
+      <script>SIMPROC:(L:A32NX_TRK_FPA_MODE_ACTIVE, bool) 1 == if{ (&gt;H:A320_Neo_FCU_VS_DEC_FPA) } els{ (&gt;H:A320_Neo_FCU_VS_DEC_VS) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>vs_inc</label>
+      <script>SIMPROC:(L:A32NX_TRK_FPA_MODE_ACTIVE, bool) 1 == if{ (&gt;H:A320_Neo_FCU_VS_INC_FPA) } els{ (&gt;H:A320_Neo_FCU_VS_INC_VS) }</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>vs_mode_lvloff</label>
+      <script>(&gt;H:A320_Neo_FCU_VS_PUSH)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>vs_mode_vsengage</label>
+      <script>(&gt;H:A320_Neo_FCU_VS_PULL)</script>
+    </Script>
+    <Script>
+      <group>FBW_A32nx_Xtouch</group>
+      <label>SBRK_ARM</label>
+      <script>SIMPROC:(L:A32NX_SPOILERS_ARMED) 0 == if{ (&gt;K:SPOILERS_ARM_ON) 0 (&gt;K:SPOILERS_SET) } els{ (&gt;K:SPOILERS_ARM_OFF) 0 (&gt;K:SPOILERS_SET) }</script>
+    </Script>
+  </scripts>
+</ScriptList>
