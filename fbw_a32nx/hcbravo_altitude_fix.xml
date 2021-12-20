@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scripts>
+    <Script>
+      <group>FBW_a32nx_v2</group>
+      <label>alt_dec</label>
+      <script>3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, feet) (L:XMLVAR_Autopilot_Altitude_Increment, feet) - (L:XMLVAR_Autopilot_Altitude_Increment, feet) (A:AUTOPILOT ALTITUDE LOCK VAR:3, feet) (L:XMLVAR_Autopilot_Altitude_Increment, feet) % - (L:XMLVAR_Autopilot_Altitude_Increment, feet) % + 100 max (&gt;K:2:AP_ALT_VAR_SET_ENGLISH) (&gt;H:AP_KNOB_Down) (&gt;H:A320_Neo_CDU_AP_DEC_ALT)</script>
+    </Script>
+    <Script>
+      <group>FBW_a32nx_v2</group>
+      <label>alt_inc</label>
+      <script>3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, feet) (L:XMLVAR_Autopilot_Altitude_Increment, number) + (A:AUTOPILOT ALTITUDE LOCK VAR:3, feet) (L:XMLVAR_Autopilot_Altitude_Increment, number) % - 49000 min (&gt;K:2:AP_ALT_VAR_SET_ENGLISH) (&gt;H:AP_KNOB_Up) (&gt;H:A320_Neo_CDU_AP_INC_ALT)</script>
+    </Script>
+  </scripts>
+</ScriptList>
